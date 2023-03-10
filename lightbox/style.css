@@ -58,6 +58,10 @@ body{
   }
   .lightbox_view span{
     cursor:pointer;
+    position: absolute;
+    left:95%;
+    font-size: 40px;
+    color:#ffffffb0;
   }
   .lightbox_view img{
     position: absolute;
@@ -78,12 +82,6 @@ body{
     font-size: 40px;
     color:hwb(357 0% 0%);
     position: absolute;
-  }
-  .lightbox_view span{
-    position: absolute;
-    left:95%;
-    font-size: 40px;
-    color:#ffffffb0;
   }
   .footer{
     display: block;
