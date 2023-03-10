@@ -18,7 +18,6 @@ body{
 }
 .gridbox{
     position: absolute;
-    position: absolute;
     top:100px;
     display: grid;
     width:90%;
