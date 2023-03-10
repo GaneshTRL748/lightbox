@@ -1,0 +1,199 @@
+.head label{
+    font-weight: 600;
+    font-size: 50px;
+    color:#fff;
+}
+.head .head_label
+{
+  color:hwb(357 0% 0%);
+}
+.head{
+    display: block;
+    position: absolute;
+    width:50%;
+    left:30%;
+}
+body{
+  background-color: #000000;
+}
+.gridbox{
+    position: absolute;
+    position: absolute;
+    top:100px;
+    display: grid;
+    width:90%;
+    left:5%;
+    right:5%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap:20px;
+    padding: 10px;
+  }
+  .gridbox div {
+    border:1.5px solid hwb(357 0% 0%);
+    border-radius: 20px;
+    text-align: center;
+    height: 250px;
+    cursor: pointer;
+  }
+  .gridbox div:hover{
+    transform: scale(0.8) rotate(-15deg);
+  }
+  img{
+    height: 250px;
+    opacity: 0.7;
+  }
+  img:hover{
+    opacity: 1;
+  }
+  .lightbox_view
+  {
+    display:none;
+    border:1px solid hwb(357 0% 0%);
+    border-radius: 20px;
+    top:100px;
+    height: 450px;
+    position: absolute;
+    left:20%;
+    right:20%;
+    bottom:10%;
+  }
+  .lightbox_view span{
+    cursor:pointer;
+  }
+  .lightbox_view img{
+    position: absolute;
+    width:50%;
+    height:400px;
+    top:11%;
+    left:20%;
+  }
+  .lightbox_view p{
+    color:#ffffffb0;
+    position: absolute;
+    bottom:0%;
+    left:10%;
+  }
+  .lightbox_view label{
+    left:35%;
+    font-weight: 600;
+    font-size: 40px;
+    color:hwb(357 0% 0%);
+    position: absolute;
+  }
+  .lightbox_view span{
+    position: absolute;
+    left:95%;
+    font-size: 40px;
+    color:#ffffffb0;
+  }
+  .footer{
+    display: block;
+  }
+  .footer h3{
+      color:#fff;
+      position: absolute;
+      bottom:-20%;
+  }
+  @media (max-width:350px) {
+    .head{
+      width:90%;
+      left:10%;
+      right:0%;
+    }
+    .head label{
+      font-size:20px;
+    }
+    .lightbox_view{
+      left:5%;
+      right:5%;
+      width:90%;
+      height:400px;
+    }
+    .gridbox{
+      grid-template-columns: 1fr;
+    }
+    .gridbox div{
+      height: 200px;
+    }
+    img{
+      height: 200px;
+    }
+    .lightbox_view img{
+      height:300px;
+    }
+    .lightbox_view label{
+      font-size: 20px;
+      left:30%;
+    }
+    .lightbox_view span
+    {
+      font-size:20px ;
+      left:93%;
+    }
+  }
+  @media (min-width:350px) and (max-width:550px)
+  {
+    .head{
+      width:80%;
+      left:20%;
+    }
+    .gridbox{
+      width:70%;
+      left:15%;
+      right:15%;
+      grid-template-columns: 1fr;
+    }
+    .head label{
+      font-size:30px;
+    }
+    .lightbox_view{
+      width:90%;
+      left: 5%;
+      right:5%;
+    }
+    .lightbox_view label{
+      font-size: 30px;
+      left:30%;
+    }
+    .lightbox_view span
+    {
+      font-size:30px ;
+      left:93%;
+    }
+  }
+  @media (min-width:551px) and (max-width:750px){
+    .head{
+      width:80%;
+      left:20%;
+    }
+    .head label{
+      font-size:40px;
+    }
+    .gridbox{
+      grid-template-columns: 1fr 1fr;
+    }
+    .lightbox_view{
+      width:80%;
+      left: 10%;
+      right:10%;
+    }
+    .lightbox_view label{
+      font-size: 40px;
+      left:30%;
+    }
+    .lightbox_view span
+    {
+      font-size:40px ;
+      left:93%;
+    }
+  }
+  @media (min-width:750px) and (max-width:900px){
+    .head label{
+      font-size:40px;
+    }
+    .lightbox_view{
+      width:80%;
+      left: 10%;
+      right:10%;
+    }
+  }
